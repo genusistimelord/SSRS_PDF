@@ -1,0 +1,12 @@
+[package]
+name = "ssrs-rs"
+version = "0.1.0"
+authors = ["Andrew Wheeler <genusistimelord@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+curl = { version = "0.4", features = ["ssl", "force-system-lib-on-osx"] }
+percent-encoding = "2.1"
+lopdf = { git = "https://github.com/J-F-Liu/lopdf", commit="fec4729" }
